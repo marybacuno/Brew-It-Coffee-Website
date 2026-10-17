@@ -33,13 +33,18 @@
     <div class="info-card"><span class="c-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-7.5h2.6l.4-3h-3V8.7c0-.9.3-1.5 1.5-1.5h1.6V4.5c-.3 0-1.2-.1-2.3-.1-2.3 0-3.8 1.4-3.8 3.9v2.2H8v3h2.5V21z" fill="currentColor"/></svg></span><div class="info-body"><p class="label">Visit us at our FB Page!</p><a class="chip" href="https://www.facebook.com/profile.php?id=61581979133616" target="_blank" rel="noopener">https://www.facebook.com/profile.php?id=61581979133616</a></div></div>
     <div class="info-card"><span class="c-badge"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.500" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7.500V12l3 2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="info-body"><p class="label">Brew it Coffee Business Hours:</p><p class="hours">Monday to Sunday (1:00&nbsp;PM&nbsp;-&nbsp;10:00&nbsp;PM)</p></div></div>
   </div>
-  <div class="video-slot tablet-up">
-    <video controls playsinline preload="metadata" poster="images/video-poster.jpg" aria-label="Brew it Coffee video">
-      <source src="videos/brew-it-coffee.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <!-- CHANGED (Home): the ORDER button used to sit AFTER the video. It now lives in a
+       .video-block wrapper, as the first child, so it appears at the top of the video.
+       On phones the video is hidden (.tablet-up), so the button simply shows by itself. -->
+  <div class="video-block">
+    <a class="btn-order" href="order.html">ORDER HERE!</a>
+    <div class="video-slot tablet-up">
+      <video controls playsinline preload="metadata" poster="images/video-poster.jpg" aria-label="Brew it Coffee video">
+        <source src="videos/brew-it-coffee.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
   </div>
-  <a class="btn-order" href="order.html">ORDER HERE!</a>
 </section>
 </main>
 

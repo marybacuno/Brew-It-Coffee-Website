@@ -26,7 +26,25 @@
 </header>
 <div class="rule" aria-hidden="true"></div>
 
-<main data-page="menu"><section class="panel"><h1 class="script">Menu</h1><p class="m-sub">Hot or Iced: How Do You Brew?</p><div class="menu-board">
+<main data-page="menu"><section class="panel">
+  <!-- CHANGED (Menu): the "Menu" heading is now the centre of a 3-part showcase:
+       two drink photos on the left, the title in the middle, two drink photos on the right.
+       On phones the title comes first and each side becomes a row of two photos. -->
+  <div class="menu-showcase">
+    <div class="showcase-side showcase-left">
+      <figure class="s-photo"><img src="images/menu-matcha.jpg" width="640" height="853" alt="Iced matcha latte in a Brew It Coffee cup"></figure>
+      <figure class="s-photo"><img src="images/menu-iced-trio.jpg" width="640" height="691" alt="Three iced Brew It Coffee drinks on a table"></figure>
+    </div>
+    <div class="showcase-title">
+      <h1 class="script">Menu</h1>
+      <p class="m-sub">Hot or Iced: How Do You Brew?</p>
+    </div>
+    <div class="showcase-side showcase-right">
+      <figure class="s-photo"><img src="images/menu-hot-latte.jpg" width="640" height="806" alt="Hot latte in a black Brew It Coffee cup in front of the shop sign"></figure>
+      <figure class="s-photo"><img src="images/menu-strawberry.jpg" width="640" height="733" alt="Iced strawberry milk drink in a Brew It Coffee cup"></figure>
+    </div>
+  </div>
+  <div class="menu-board">
     <section class="m-card"><header class="m-head"><h2>Coffee</h2><span class="m-cols" aria-hidden="true"><span>Hot</span><span>Iced</span></span></header><ul>
       <li class="m-row"><span class="m-name">Americano</span><span class="m-lead" aria-hidden="true"></span><span class="m-price m-hot"><span class="sr-only">Hot </span>₱80</span><span class="m-price m-iced"><span class="sr-only">Iced </span>₱90</span></li>
       <li class="m-row"><span class="m-name">Café Latte</span><span class="m-lead" aria-hidden="true"></span><span class="m-price m-hot"><span class="sr-only">Hot </span>₱90</span><span class="m-price m-iced"><span class="sr-only">Iced </span>₱110</span></li>
