@@ -3,7 +3,7 @@
 	Your Name: Bacuño, Mary Angely M.
   Section: WD-202
 	Today's Date: October 17, 2026
-
+  
 	-->
 
 <!DOCTYPE html>
@@ -11,27 +11,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Thank You | Brew It Coffee</title>
+  <title>About Us | Brew It Coffee</title>
   <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
   <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
   <link rel="apple-touch-icon" href="images/favicon-192.png">
   <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Macondo+Swash+Caps&family=Great+Vibes&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body class="confirm-page">
+<body>
 <header class="site-header">
   <a class="logo" href="index.html" aria-label="Brew It Coffee home"><img src="images/logo.jpg" alt="Brew It Coffee"></a>
   <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
-  <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
+  <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html" aria-current="page">About Us</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
 </header>
 <div class="rule" aria-hidden="true"></div>
 
-<main data-page="confirm"><div class="hero hero tall"><img src="images/hero-confirm.jpg" alt="Brew it Coffee storefront sign on a white wall"></div><section class="panel thanks">
-  <h1 class="script">Thank you so much for your order!</h1>
-  <p class="lead">We’ve received it and will have it delivered soon!</p>
-  <!-- NEW (Confirm): re-uses the existing .btn-order class so the gradient, hover effect and
-       font are exactly the same as the "ORDER HERE!" button on the home page -->
-  <a class="btn-order" href="index.html">Return to Home</a>
+<main data-page="about"><div class="hero hero"><img src="images/hero-about.jpg" alt="A latte beside a knitted blanket"></div><!-- CHANGED (About): the four paragraphs are now grouped under three headings
+     (Our Story / Our Mission / Our Vision) and placed beside a photo in a 2-column grid. -->
+<section class="panel about">
+  <div class="about-layout">
+    <!-- NEW: photo column (left on desktop, stacks above the text on mobile) -->
+    <figure class="about-photo">
+      <img src="images/about-photo.jpg" width="900" height="1200" loading="lazy" alt="A smiling person posing beside the Brew It Coffee storefront sign">
+    </figure>
+
+    <!-- NEW: text column (right on desktop) -->
+    <div class="about-text">
+      <section class="about-block">
+        <h2>Our Story</h2>
+        <p><strong>Brew It Coffee, where every cup feels like home!</strong> Located in Brgy. Calibutbut, Xevera Plaza, Bacolor, Pampanga, we serve delicious coffee, refreshing beverages, and a cozy atmosphere where everyone is welcome. Whether you’re starting your day with a freshly brewed cup, taking a well-deserved break, studying, working, or catching up with friends, Brew It Coffee is the perfect place to relax, connect, and make every moment a little more special.</p>
+        <p>Every visit to Brew It Coffee is an opportunity to slow down, connect, and enjoy the simple moments. From the comforting aroma of freshly brewed coffee to the warm and relaxing atmosphere, we strive to create a place where you can feel comfortable and at home. Come visit us, grab your favorite drink, and let us make your coffee moments memorable.</p>
+      </section>
+      <section class="about-block">
+        <h2>Our Mission</h2>
+        <p>At <strong>Brew It Coffee</strong>, our mission is to serve quality and delicious coffee while creating a warm, welcoming, and comfortable space where people can relax, connect, study, work, and enjoy meaningful moments. We are committed to providing friendly service, satisfying products, and a cozy café experience that makes every customer feel at home.</p>
+      </section>
+      <section class="about-block">
+        <h2>Our Vision</h2>
+        <p>Our vision is to become a trusted and well-loved coffee destination in Bacolor, Pampanga, known for great coffee, genuine hospitality, and a welcoming atmosphere. We aspire to grow our community, reach more customers, and make <strong>Brew It Coffee</strong> a place where every visit creates a memorable experience and every cup feels like home.</p>
+      </section>
+    </div>
+  </div>
 </section>
 </main>
 
