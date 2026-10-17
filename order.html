@@ -1,0 +1,49 @@
+<!--
+	Brew It Coffee
+	Your Name: Bacuño, Mary Angely M.
+  Section: WD-202
+	Today's Date: October 17, 2026
+
+	-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Order Here | Brew It Coffee</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon-192.png">
+  <link rel="apple-touch-icon" href="images/favicon-192.png">
+  <link href="https://fonts.googleapis.com/css2?family=Almendra:wght@400;700&family=Macondo+Swash+Caps&family=Great+Vibes&family=Rosarivo:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="order-page">
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Brew It Coffee home"><img src="images/logo.jpg" alt="Brew It Coffee"></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span><span></span><span></span></button>
+  <nav id="site-nav" class="site-nav" aria-label="Main"><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="menu.html">Menu</a></li><li><a href="contact.html">Contact Us</a></li></ul></nav>
+</header>
+<div class="rule" aria-hidden="true"></div>
+
+<main data-page="order"><div class="hero hero tall"><img src="images/hero-order.jpg" alt="Two cups of coffee and cookies"></div><form class="order-form" id="order-form" action="confirm.html" novalidate>
+  <div class="field"><label for="name">Full Name <b aria-hidden="true">*</b></label>
+  <input id="name" name="name" type="text" placeholder="Last Name, First Name, Middle Initial" required autocomplete="name"></div>
+  <div class="field"><label for="address">Address <b aria-hidden="true">*</b></label>
+  <input id="address" name="address" type="text" placeholder="Enter your full address here..." required autocomplete="street-address"></div>
+  <div class="field"><label for="phone">Contact Number <b aria-hidden="true">*</b></label>
+  <input id="phone" name="phone" type="tel" placeholder="ex: 0967 676 6767" required autocomplete="tel"></div>
+  <div class="field"><label for="order">Order <b aria-hidden="true">*</b></label>
+  <textarea id="order" name="order" rows="3" placeholder="Please specify it here..." required></textarea></div>
+  <p class="form-error wide" id="form-error" role="alert" hidden></p>
+  <button type="submit" class="wide">Submit</button>
+</form>
+</main>
+
+<footer class="site-footer">
+  <p>&copy; Copyright 2026 &bull; All Rights Reserved &bull; Created by <span style="white-space:nowrap">Mary&nbsp;Bacuño</span></p>
+  <p><a href="index.html">brewitcoffee.com</a></p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
